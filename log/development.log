@@ -16706,3 +16706,225 @@ Processing by ProductosController#index as HTML
 Completed 200 OK in 267ms (Views: 265.7ms | ActiveRecord: 0.3ms | Allocations: 8515)
 
 
+Started GET "/" for ::1 at 2020-04-25 11:20:02 -0500
+  [1m[35m (21.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 7744.4ms | Allocations: 49397)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 9230ms (ActiveRecord: 1.6ms | Allocations: 232396)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito_path' for #<#<Class:0x0000000007fa6610>:0x000000000835baa8>):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito_path %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:21:17 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 56.0ms | Allocations: 8818)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 773ms (ActiveRecord: 1.5ms | Allocations: 178502)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito' for #<#<Class:0x000000000abdb460>:0x000000000abd9958>):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito/index %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:22:24 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 65.7ms | Allocations: 2891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 762ms (ActiveRecord: 0.3ms | Allocations: 172569)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito_path' for #<#<Class:0x000000000f97c278>:0x000000000f9aa880>
+Did you mean?  carrito_index_path):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito_path %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:22:41 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 2902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 726ms (ActiveRecord: 0.2ms | Allocations: 172660)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito_path' for #<#<Class:0x0000000008fbac40>:0x0000000008fc3bd8>
+Did you mean?  carrito_index_path):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "q", carrito_path %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:23:28 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 2902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 890ms (ActiveRecord: 0.3ms | Allocations: 172594)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito_path' for #<#<Class:0x000000000abd9368>:0x000000000abe3598>
+Did you mean?  carrito_index_path):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito_path %></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:23:34 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 2891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 587ms (ActiveRecord: 0.3ms | Allocations: 172569)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito_path' for #<#<Class:0x000000000ac49fc8>:0x000000000ac48100>
+Did you mean?  carrito_index_path):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito_path %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:24:24 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 2891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 701ms (ActiveRecord: 0.2ms | Allocations: 172563)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito' for #<#<Class:0x000000000ad0a5c0>:0x000000000ad13990>):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:24:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 39.8ms | Allocations: 8783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 659ms (ActiveRecord: 1.4ms | Allocations: 178650)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito' for #<#<Class:0x000000000fc926d8>:0x000000000fc90bf8>
+Did you mean?  carrito_url):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:27:27 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 22.3ms | Allocations: 8745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 606ms (ActiveRecord: 1.4ms | Allocations: 178641)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito' for #<#<Class:0x000000000637f7c0>:0x000000000646fe50>
+Did you mean?  carrito_url):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito/index %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 11:27:56 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 2896)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 786ms (ActiveRecord: 0.4ms | Allocations: 172575)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito' for #<#<Class:0x0000000005967be8>:0x0000000005b684b0>
+Did you mean?  carrito_url):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4"<%= link_to "", carrito, method:"get" %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34

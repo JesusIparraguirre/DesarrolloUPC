@@ -16664,3 +16664,45 @@ Processing by ProductosController#index as HTML
 Completed 200 OK in 123ms (Views: 119.6ms | ActiveRecord: 0.2ms | Allocations: 10109)
 
 
+Started GET "/" for ::1 at 2020-04-25 10:49:05 -0500
+  [1m[35m (116.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 15201.1ms | Allocations: 39841)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17977ms (Views: 17810.6ms | ActiveRecord: 14.4ms | Allocations: 54423)
+
+
+Started GET "/" for ::1 at 2020-04-25 10:50:12 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 2893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 173ms (Views: 169.8ms | ActiveRecord: 0.5ms | Allocations: 10125)
+
+
+Started GET "/" for ::1 at 2020-04-25 10:52:35 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 257.0ms | Allocations: 2903)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1103ms (Views: 1100.1ms | ActiveRecord: 0.4ms | Allocations: 10178)
+
+
+Started GET "/" for ::1 at 2020-04-25 10:54:32 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 64.0ms | Allocations: 2655)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 267ms (Views: 265.7ms | ActiveRecord: 0.3ms | Allocations: 8515)
+
+
